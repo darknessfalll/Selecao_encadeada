@@ -15,9 +15,23 @@ public class exercicio_2 {
         double n3 = sc.nextDouble();
         System.out.println(" Valor atribuido foi: "+ n3);
 
+        double delta = Math.pow(n2, 2) - 4* n1 * n3 ;
 
+        if (delta < 0){
+            System.out.println(" Não existem raizes ");
+        }
+        else{
+            double x1, x2;
+            x1 = (-n2 + Math.sqrt(delta) ) / 2 * n1;
+            x2 = ( -n2 - Math.sqrt(delta) ) / 2 * n1;
+            System.out.println(" Suas raizes são: " + x1 + "," +x2 );
+        }
+        if (delta == 0){
+            double x1;
+            x1 = (-n2 + Math.sqrt(delta) ) / 2 * n1;
 
+            System.out.println(" Sua raiz é: " + x1);
 
-
+        }
     }
 }
